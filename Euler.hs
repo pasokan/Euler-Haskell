@@ -5,6 +5,7 @@
 module Euler 
 ( num2Digits
 , digits2Num
+, fibs
 ) where
 
 import Data.Char
@@ -15,6 +16,6 @@ num2Digits n = map  digitToInt $ show n
 digits2Num :: [Int] -> Integer
 digits2Num a = read (map intToDigit a) :: Integer
 
-
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
  
