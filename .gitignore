@@ -1,4 +1,3 @@
-*hi
-*o
-test*
-*[0-9]
+*
+!README.md
+!E*hs
