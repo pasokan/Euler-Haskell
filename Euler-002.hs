@@ -12,7 +12,7 @@ import Euler (fibs)
 
 limit = 4000000
 
-evenFibs= [f | f <- fibs, even f]
+evenFibs = [f | f <- fibs, even f]
 
 euler002 = takeWhile (<limit) evenFibs
 
