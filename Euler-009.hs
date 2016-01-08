@@ -5,6 +5,6 @@
 -- There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 -- Find the product abc.
 
-triads = [(a, b, c) | a <- [3..1000], b <- [a+1..1000], let c = 1000 - a - b, c > 5, a * a + b * b == c * c]
+triads n = [[a, b, c] | a <- [3..n], b <- [a+1..n], let c = n - a - b, c > 5, a * a + b * b == c * c]
 
-main = putStrLn $ show $ head triads 
+main = putStrLn $ show $ product $ head $ triads 1000 
