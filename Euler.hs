@@ -7,12 +7,6 @@ module Euler
 , digits2Num
 , fibs
 , maxFactor
-, isPrime
-, primeFactors
-, factors
-, primes
-
-
 ) where
 
 import Data.Char
